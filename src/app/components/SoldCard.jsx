@@ -13,19 +13,19 @@ const SoldCard = ({
 
       {/* Profile Section */}
       <div className="flex justify-start gap-4 items-center p-6 pb-4">
-        <div className="relative w-14 h-14 shrink-0">
-          <Image
-            src={profileImage}
-            alt="Profile"
-            layout="fill"
-            className="rounded-full object-cover"
-          />
-        </div>
-        <div className="space-y-1">
-          <h3 className="font-semibold text-gray-800 text-lg leading-tight">{name}</h3>
-          <p className="text-gray-500 text-sm">{email}</p>
-        </div>
-      </div>
+             <div className="relative w-13.5 h-13.5 shrink-0">
+               <Image
+                 src={profileImage}
+                 alt="Profile"
+                 layout="fill"
+                 className="rounded-full object-cover"
+               />
+             </div>
+             <div className="space-y-1">
+               <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg ">{name}</h3>
+               <p className="text-[#6B6B6B] font-roboto text-xs">{email}</p>
+             </div>
+           </div>
 
       {/* T-shirt Image Section */}
       <div className="relative aspect-square rounded px-4 pb-4">
@@ -34,21 +34,28 @@ const SoldCard = ({
             src={tshirtImage}
             alt="T-Shirt Design"
             layout="fill"
-            className="object-cover"
+            className="object-cover opacity-[0.3]"
           />
 
           {/* Overlay Buttons */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
-      <button className="bg-red-600 text-white px-4 py-1 rounded-md  shadow-lg cursor-pointer">
+      <button className=" text-white w-24 h-[37px] rounded-lg  shadow-lg font-montserrat uppercase font-semibold "
+      style={{
+        background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+      }}
+    > 
         Sold
       </button>
     </div>
           <div className="absolute bottom-4 left-2 right-2 flex justify-between">
-            <button className="bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-6 py-3 rounded-lg text-xs  font-semibold cursor-pointer">
-              Buy Now
+            <button className=" text-white opacity-[0.3] px-4 rounded-lg text-xs   font-semibold font-roboto "
+             style={{
+              background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+            }}>
+              Buy 
             </button>
             
-            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm cursor-pointer">
+            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm  opacity-[0.3]">
               <span className="font-semibold text-gray-800">price:</span>
               <div className="flex items-center gap-1.5">
                 <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">

@@ -1,73 +1,83 @@
 'use client';
-import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
+
 import { useState } from 'react';
-
-
-const faqs = [
-  {
-    question: 'What is NFT ALGO?',
-    answer: 'NFT ALGO is the world’s leading NFTs marketplace where you can discover, sell, and bid NFTs and get rich.',
-  },
-  {
-    question: 'How do I buy NFTs?',
-    answer: 'To buy NFTs, simply connect your wallet, browse collections, and place a bid or buy now using supported cryptocurrencies.',
-  },
-  {
-    question: 'How can I sell my NFT?',
-    answer: 'Go to your profile, select the NFT you want to sell, set the price, and list it on the marketplace.',
-  },
-  {
-    question: 'Is there a fee for selling NFTs?',
-    answer: 'Yes, we charge a small transaction fee to support the platform and provide a smooth experience for buyers and sellers.',
-  },
-];
+import { PlusIcon, MinusIcon } from '@heroicons/react/24/solid';
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
+  const faqs = [
+    {
+      question: 'What is an NFT?',
+      answer:
+        'An NFT (Non-Fungible Token) is a unique digital asset that represents ownership or proof of authenticity of a specific item or piece of content, often associated with digital art, collectibles, or virtual goods, and is stored on a blockchain.',
+    },
+    {
+      question: 'How do I buy an NFT?',
+      answer:
+        'To buy an NFT, connect a crypto wallet, browse an NFT marketplace, and purchase the NFT using cryptocurrency.',
+    },
+    {
+      question:'How do I sell an NFT?',
+      answer:'To sell an NFT, connect your crypto wallet to an NFT marketplace, upload your digital asset, and create a listing by setting a price (fixed or auction). Once listed, buyers can view and purchase your NFT. Upon sale, the NFT is transferred to the buyer and you receive the payment in cryptocurrency'
+    },
+    {
+      question: 'What cryptocurrencies do you accept?',
+      answer:
+' We accept a variety of popular cryptocurrencies for NFT transactions, including Ethereum (ETH), Polygon (MATIC), Binance Coin (BNB), and Solana (SOL). The accepted currencies may vary depending on the marketplace and blockchain network your NFT is listed on.'  
+  }
+ 
+    
+  ];
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="relative ">
-    <div className="absolute top-0 right-0 w-[310px] h-[310px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10">   
-    </div>
-    <div className="max-w-3xl mx-auto my-16 px-4">
-      <h2 className="text-3xl xl:text-6xl text-[#2B2B2B]  text-center mb-8 uppercase font-['Apex_Mk2']">Frequently Asked Questions</h2>
+    <div className="relative">
+      <div className="absolute top-0 right-0 w-[310px] h-[310px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10" />
 
-      <div className="space-y-4 ">
-        {faqs.map((item, index) => {
-          const isOpen = openIndex === index;
+      <div className="max-w-[1037px] mx-auto px-4 my-16">
+        <h2 className="text-3xl xl:text-6xl text-[#2B2B2B] font-bold text-center mb-8 uppercase font-['Apex_Mk2'] tracking-wide">
+          Frequently Asked Questions
+        </h2>
 
-          return (
-            <div
-              key={index}
-              className={`border border-gray-300   rounded-lg transition-all ${
-                isOpen ? 'bg-[#FD0000] '  : 'bg-[#FFF9F9] '
-              }`}
-            >
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="w-full flex items-center justify-start gap-4 p-4 text-left focus:outline-none cursor-pointer"
+        <div className="space-y-4">
+          {faqs.map((item, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={index}
+                className="rounded-xl border border-[#E7E7E7] bg-[#FFF9F9] shadow-sm px-5 overflow-hidden"
               >
-                <span >
-                  {isOpen ? <MinusIcon  className='text-lg text-black w-5 h-5'/> : <PlusIcon className='text-lg text-black w-5 h-5'/>}
-                </span>
-                <span className="text-[#2B2B2B] text-xl  ">{item.question}</span>
-                
-              </button>
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className={`w-full flex items-center gap-3 px-5 py-4 text-left  ${
+                    isOpen ? 'bg-[#F9E0E0]  ' : 'bg-[#FFF9F9]'
+                  } rounded-[20px] my-4 opacity-[0.1px]  `}
+                >
+                  {isOpen ? (
+                    <MinusIcon className="w-7.5 h-7.5 text-black" />
+                  ) : (
+                    <PlusIcon className="w-7.5 h-7.5 text-black" />
+                  )}
+                  <span className="text-[#2B2B2B] font-semibold text-[22px]  font-roboto">
+                    {item.question}
+                  </span>
+                </button>
 
-              {isOpen && (
-                <div className="px-4 pb-4 text-[#808080] bg-white flex text-center rounded-md text-lg">
-                  {item.answer}
-                </div>
-              )} 
-            </div>
-          );
-        })}
+                {isOpen && (
+                  <div className="bg-white px-14 py-4 text-[#808080] text-sm md:text-lg leading-relaxed font-roboto rounded-b-xl">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

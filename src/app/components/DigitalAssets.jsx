@@ -33,12 +33,12 @@ const DigitalAssets = () => {
                         className="object-contain scale-y-160 "
                       />
                     </div>
-    <div className='mx-auto mt-12 max-w-7xl'>
-          <div className="text-center mb-12 max-w-4xl mx-auto px-4 uppercase">
+    <div className='px-4 mx-auto mt-16 container'>
+          <div className="text-center mb-12  uppercase">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Apex_Mk2'] text-gray-900 leading-tight tracking-tight">
           Turn your Imagination
           <br className="hidden md:block" />
-          Into Digital Assets
+          Into Digital Asset
         </h1>
       </div>
 
@@ -65,15 +65,15 @@ const DigitalAssets = () => {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Fantasy creature holding a sword..."
-            className="w-full px-4 py-3 text-gray-300 bg-transparent border-none outline-none placeholder-gray-500 text-sm md:text-base flex-grow"
+            className="w-full px-4 py-3 text-black bg-transparent border-none outline-none placeholder-gray-500 text-sm md:text-base flex-grow"
             required
           />
           <button
             type="submit"
-            className="w-full cursor-pointer md:w-auto bg-red-500 hover:bg-red-600 text-white rounded-md px-6 py-4 md:py-3 transition-colors duration-300 flex items-center justify-center gap-2"
+            className="w-full cursor-pointer md:w-auto bg-[#FE0101] text-white rounded-[10px] px-6 py-4 md:py-3 transition-colors duration-300 flex items-center justify-center gap-2"
           >
             <span className="font-semibold ">Generate</span>
-            <PaperAirplaneIcon className="w-5 h-5 rotate-[310deg]" />
+            <PaperAirplaneIcon className="w-[14px] h-[14px] rotate-[310deg]" />
 
           </button>
         </div>

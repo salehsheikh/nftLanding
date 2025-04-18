@@ -1,12 +1,7 @@
 import React from 'react';
-import { Roboto } from 'next/font/google'
-
 import SoldCard from './SoldCard';
  
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+
 const cards = [
     {
       name: "John Doe",
@@ -73,10 +68,10 @@ const Sold = () => {
              <div className="absolute bottom-70
               right-0 w-[310px] h-[310px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10">   
              </div>
- <div className="px-4 py-8 mt-12 font-roboto mx-auto max-w-7xl ">
-     <div className="mx-auto px-4 mb-12 ">
+ <div className="px-4 py-8 mt-16  mx-auto container ">
+     <div className="  mb-12 ">
      
-     <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase ">
+     <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex-Mk2] ">
               Recently Sold
              </p>
     </div>

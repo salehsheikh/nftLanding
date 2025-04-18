@@ -17,7 +17,7 @@ import LandingTop from '../components/LandingTop'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div >
       <Navbar/>
       <HomeText/>
       <LandingTop/>

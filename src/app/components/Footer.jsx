@@ -30,8 +30,8 @@ const Footer = () => {
                       className="object-contain scale-110"
                     />
                   </div>
-    <footer className="bg-[linear-gradient(276deg,_#FD0000_-0.05%,_#FF9292_201.36%)] rounded-2xl mx-4 lg:mx-36  min-h-89 my-6 text-white py-10 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr_2fr_1fr] gap-16 items-start ">
+    <footer className="bg-[linear-gradient(276deg,_#FD0000_-0.05%,_#FF9292_201.36%)] rounded-2xl max-w-[1320px] mx-4 md:mx-12 xl:mx-auto    min-h-89 my-6 text-white py-10 px-6">
+      <div className="  grid grid-cols-1 md:grid-cols-[1fr_1fr_2fr_1fr] gap-16 items-start ">
 
         {/* Full-height image */}
         <div className="relative left-0 w-full h-full scale-125 ">
@@ -39,7 +39,7 @@ const Footer = () => {
             src="/footerwave.png"
             alt="Footer Image"
             layout="fill"
-            className="object-cover rounded-md  text-[#fff]"
+            className="object-cover rounded-md  text-[#fff] "
           />
         </div>
 

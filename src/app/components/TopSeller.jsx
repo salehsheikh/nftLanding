@@ -64,22 +64,20 @@ const TopSeller = () => {
               className="object-contain scale-y-180 "
             />
           </div>
-   <div className="text-center mb-12 py-12 mx-auto">
-        <div className="flex justify-between items-center  max-w-7xl mx-auto mt-6 px-4 flex-wrap gap-12">
-  {/* Center Paragraph */}
-  <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase ">
+          <div className="px-4 container mx-auto mt-20">
+   <div className="text-center mb-12 ">
+        <div className="flex justify-between items-center   mt-6  flex-wrap gap-12">
+  <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex_Mk2] ">
             Top seller
           </p>
           <div className="flex gap-4 shrink-0">
-  {/* Left Play Button */}
-  <p className="text-[#FD0000] text-xl cursor-pointer">View all</p>
+  <p className="text-[#FD0000] text-[22px] capitalize cursor-pointer font-roboto">View all</p>
 </div>
 </div>
 
 
       </div>
-    <div className=" max-w-7xl py-3 mx-auto ">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16">
           {TopSellers.map((seller, index) => (
             <SellerSection
               key={index}
@@ -89,6 +87,7 @@ const TopSeller = () => {
             />
           ))}
         </div>
+    
       </div>
       </div>
   );

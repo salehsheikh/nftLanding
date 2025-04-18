@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import {  CheckIcon } from "@heroicons/react/24/outline";
 
 const TopCollectionCard = ({ images = [] ,imageSrc,art,createdby}) => {
   const firstRow = images.slice(0, 2);
   const secondRow = images.slice(2, 6);
 
   return (
-    <div className="bg-white rounded-xl shadow-md p-4 w-[300px] sm:w-full lg:max-w-md ">
-      <div className="bg-[#E7E7E7] p-3 rounded-lg space-y-3">
+    <div className="bg-white rounded-xl  p-3 w-[300px] sm:w-full  ">
+      <div className="bg-[#E7E7E7] p-2 rounded-lg space-y-3">
         {/* First Row: 2 Images */}
         <div className="flex gap-4 justify-center">
           {firstRow.map((img, idx) => (
@@ -46,14 +46,14 @@ const TopCollectionCard = ({ images = [] ,imageSrc,art,createdby}) => {
           className="rounded-md object-cover"
         />
         {/* Tick Icon */}
-        <div className="absolute -top-1 -right-1 bg-transparent rounded-full p-1 shadow-md">
-          <CheckCircleIcon className="text-[#7872FF] w-4 h-4" />
-        </div>
+       <div className="absolute top-0 right-0  rounded-full p-1 w-4 h-4 bg-[#7872FF] ">
+                 <CheckIcon className="text-white s " />
+               </div>
       </div>
        {/* Text Content */}
        <div className="flex flex-col">
-        <h4 className="text-2xl font-semibold text-[#2B2B2B]">{art}</h4>
-        <p className="text-sm text-[#808080]">{createdby}</p>
+        <h4 className="text-2xl  font-roboto font-bold text-[#2B2B2B]">{art}</h4>
+        <p className="text-sm text-[#808080] font-roboto">{createdby}</p>
       </div>
       </div>
     </div>

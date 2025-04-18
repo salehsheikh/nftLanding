@@ -9,10 +9,10 @@ const HeroCard = ({
 }) => {
   return (
     <div>
-  <div className="min-w-[308px] mx-auto rounded-2xl shadow-md overflow-hidden relative bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/card.png')" }}>
+  <div className="min-w-[308px] mx-auto rounded-2xl shadow-md overflow-hidden relative bg-cover bg-no-repeat bg-center  " style={{ backgroundImage: "url('/card.png')" }}>
       {/* Profile Section */}
       <div className="flex justify-start gap-4 items-center p-6 pb-4">
-        <div className="relative w-14 h-14 shrink-0">
+        <div className="relative w-13.5 h-13.5 shrink-0">
           <Image
             src={profileImage}
             alt="Profile"
@@ -21,8 +21,8 @@ const HeroCard = ({
           />
         </div>
         <div className="space-y-1">
-          <h3 className="font-semibold text-gray-800 text-lg leading-tight">{name}</h3>
-          <p className="text-gray-500 text-sm">{email}</p>
+          <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg ">{name}</h3>
+          <p className="text-[#6B6B6B] font-roboto text-xs">{email}</p>
         </div>
       </div>
 
@@ -38,11 +38,14 @@ const HeroCard = ({
 
           {/* Overlay Buttons */}
           <div className="absolute bottom-4 left-2 right-2 flex justify-between">
-            <button className="bg-gradient-to-r from-[#FF9292] to-[#FD0000] text-white px-6 py-3 rounded-lg text-xs font-semibold cursor-pointer">
-              Buy Now
+            <button className=" text-white px-6 py-3 rounded-lg text-xs font-semibold cursor-pointer "
+             style={{
+              background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+            }}>
+              Buy 
             </button>
             
-            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm cursor-pointer">
+            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm ">
               <span className="font-semibold text-gray-800">price:</span>
               <div className="flex items-center gap-1.5">
                 <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">

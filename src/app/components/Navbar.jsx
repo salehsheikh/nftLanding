@@ -4,14 +4,16 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import NavModal from "./modals/NavModal";
 
 const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
     { path: "/", label: "Home" },
-    { path: "/explore", label: "Explorer" },
+    { path: "/explore", label: "Ai nft generation" },
   ];
 
   return (
@@ -44,7 +46,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="NFT Marketplace"
-              className="h-16 w-16" 
+              className=" w-[99.72px]  h-[100px]" 
             />
           </Link>
 
@@ -54,9 +56,9 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors ${
+                className={`relative px-3 py-2 text-sm font-['Apex_Mk2'] transition-colors ${
                   pathname === link.path
-                    ? "text-[#DE0308] text-lg border-b-1 border-[#DE0308]"
+                    ? "text-[#DE0308]  text-lg border-b-1 border-[#DE0308]"
                     : "text-gray-500 hover:text-black"
                 }`}
               >
@@ -67,10 +69,16 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center space-x-6">
-            <button className="px-4 2xl:px-6 py-3 md:text-lg 2xl:text-[22px] font-roboto text-white rounded-sm bg-gradient-to-r from-[#FF9292] to-[#FD0000]  cursor-pointer">
-              Connect Wallet
-            </button>
-            <button className="px-4 2xl:px-6 py-2 md:text-lg 2xl:text-[22px] font-roboto text-[#FE0101] bg-transparent rounded-sm border-2 border-[#FE0101] cursor-pointer">
+          <button
+           onClick={() => setIsModalOpen(true)}
+    className="px-4 rounded-lg 2xl:px-8 py-4 md:text-lg 2xl:text-[22px] font-roboto capitalize text-white cursor-pointer"
+    style={{
+      background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+    }}
+  >
+    Connect Wallet
+  </button>
+            <button className="px-4 2xl:px-8 py-3.5 items-center md:text-lg 2xl:text-[22px] font-roboto text-[#FE0101] bg-transparent rounded-lg border-2 border-[#FE0101] cursor-pointer">
               Create NFT
             </button>
           </div>
@@ -99,7 +107,12 @@ const Navbar = () => {
 
             {/* Mobile Buttons */}
             <div className="mt-6 flex  justify-center items-center flex-col space-y-4">
-              <button className="w-full sm:w-1/2 px-6 py-3 text-[18px] font-roboto text-white rounded-sm bg-gradient-to-r from-[#FF9292] to-[#FD0000] cursor-pointer">
+              <button
+               onClick={() => setIsModalOpen(true)}
+               className="w-full sm:w-1/2 px-6 py-3 text-[18px] font-roboto text-white rounded-sm  cursor-pointer"
+                style={{
+                  background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+                }}>
                 Connect Wallet
               </button>
               <button className="w-full sm:w-1/2 px-6 py-2 text-[18px] font-roboto text-[#FE0101] bg-transparent rounded-sm border-2 border-[#FE0101] cursor-pointer">
@@ -110,6 +123,7 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    <NavModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react'; 
 const HomeText = () => {
   return (
-<div className="  text-center px-4 mt-8">
+<div className="  text-center px-4 mt-8 ">
 <div className="flex justify-center">
-        <p className="max-w-6xl font-['Apex_Mk2'] text-4xl md:text-6xl lg:text-8xl  text-[#2B2B2B] uppercase ">
+        <p className="max-w-6xl font-['Apex_Mk2'] text-4xl md:text-6xl lg:text-8xl leading-[106px]  text-[#2B2B2B] uppercase tracking-[3.84px]">
           Discover, create & sell artworks.
         </p>
       </div>
