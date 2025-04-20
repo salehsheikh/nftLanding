@@ -40,22 +40,25 @@ const AnimatedCards = () => {
     },
   ];
 
+
   const cardTransforms = [
-    "rotate-x-45  -translate-x-65 z-10",
-    "rotate-x-30 -translate-x-32 z-20",
-    "rotate-[0deg] z-100",
-    "rotate-x-30  translate-x-32 z-20",
-    "rotate-x-45 translate-x-65 z-10",
+    "!rotate-x-45  -translate-x-90   animate-xShift ",
+    "!rotate-x-30 -translate-x-48   animate-xShift",
+    "!rotate-[0deg] z-30 animate-yBounce",
+    "!rotate-x-30  translate-x-48 animate-xShift ",
+    "!rotate-x-45 translate-x-90  animate-xShift",
+    
   ];
 
   return (
-    <div className="bg-[#FFF9F9] radial-bg py-10 relative ">
+    <div className="bg-[#FFF9F9] radial-bg py-10 relative">
       {/* For medium and up screens - layered layout */}
       <div className="hidden lg:flex min-h-[500px] items-center justify-center relative">
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`absolute ${cardTransforms[index % cardTransforms.length]} transition-transform duration-500`}
+            className={`absolute ${cardTransforms[index % cardTransforms.length]} transition-transform duration-200`
+          }
           >
             <HeroCard {...card} />
           </div>
