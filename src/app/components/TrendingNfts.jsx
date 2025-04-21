@@ -90,7 +90,7 @@ const TrendingNfts = () => {
     </span>
   </button>
   {showDropdown && (
-                <ul className="absolute right-31 mt-16 w-54 bg-[#F9F9F9] border border-[#FD0000] shadow-lg rounded-md z-10">
+                <ul className="absolute right-auto mt-16 w-54 bg-[#F9F9F9] border border-[#FD0000] shadow-lg rounded-md z-10">
                   {["Last 30 minutes", "Last 1 hour", "Last 24 hours", "Last 7 days"].map((option, i) => (
                     <li
                       key={i}
