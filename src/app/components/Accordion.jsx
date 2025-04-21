@@ -69,7 +69,7 @@ const Accordion = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="bg-white px-14 py-4 text-[#808080] text-sm md:text-lg leading-relaxed font-roboto rounded-b-xl">
+                  <div className="bg-transparent px-14 py-4 text-[#808080] text-sm md:text-lg leading-relaxed font-roboto rounded-b-xl">
                     {item.answer}
                   </div>
                 )}

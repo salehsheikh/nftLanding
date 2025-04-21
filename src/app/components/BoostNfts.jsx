@@ -16,13 +16,13 @@ const BootsNfts = () => {
             
             {/* Text Section */}
             <div className="flex-1 space-y-6">
-              <h3 className="text-3xl md:text-5xl xl:text-6xl uppercase font-['Apex_Mk2'] text-gray-900 tracking-[1.92px]">
+              <h3 className="text-3xl md:text-5xl xl:text-6xl uppercase font-['Apex_Mk2'] text-[#2B2B2B] tracking-[1.92px]">
                 Boost Your NFTs: Enhance Visibility And Value
               </h3>
               <p className="text-base md:text-lg xl:text-xl text-gray-600 font-roboto ">
                 The Boost feature is a premium service that allows NFT creators and collectors to elevate their listings on our marketplace. By boosting an NFT, you can ensure it appears prominently in search results, featured sections, and on the homepage, maximizing exposure to potential buyers.
               </p>
-              <button className="mt-32 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl flex items-center gap-[10px] "  
+              <button className="mt-32 text-white px-6 border[1.8px] border-[#FD0000] md:px-8 py-3 md:py-4 rounded-xl flex items-center gap-[10px] "  
               style={{
       background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
     }}>

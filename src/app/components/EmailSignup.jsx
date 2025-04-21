@@ -18,29 +18,29 @@ const EmailSignup = () => {
     <div className="max-w-4xl mx-auto px-4  mt-24 py-8">
       {/* First Row - Text */}
       <div className="mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-oxanium  text-gray-900 uppercase">
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-oxanium font-bold text-[#2B2B2B] uppercase">
           Ready for Next Drop ?
         </h2>
       </div>
 
       {/* Second Row - Email Input */}
       <form onSubmit={handleSubmit} className="max-w-2xl mx-auto ">
-        <div className="flex flex-col md:flex-row items-center gap-4 border-2 border-red-500 rounded-lg p-2.5">
+        <div className="flex flex-col md:flex-row items-center gap-4 border border-[#FD0000] rounded-[15px] py-2.5 px-4">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="info@gmail.com"
-            className="w-full px-4 py-3 text-red-500 bg-transparent border-none outline-none placeholder-red-500 text-sm md:text-base flex-grow "
+            className="w-full px-4 py-3 font-roboto text-red-500 bg-transparent border-none outline-none placeholder-[#FE0101] opacity-[0.7] text-sm md:text-2xl flex-grow "
             required
           />
           <button
             type="submit"
-            className="w-full md:w-auto text-white rounded-md px-4 py-4 md:py-5 md:px-[27px] cursor-pointer flex items-center justify-center gap-2"
+            className="w-[88px] h-[76px]  text-white rounded-md px-4 py-4 md:py-5 md:px-[27px] cursor-pointer flex items-center justify-center"
             style={{
               background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
             }}>
-            <PaperAirplaneIcon className="w-8 h-8 rotate-310" />
+            <PaperAirplaneIcon className="w-8 h-8 rotate-310 shrink-0" />
           </button>
         </div>
       </form>

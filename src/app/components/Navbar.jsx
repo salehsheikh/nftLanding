@@ -26,7 +26,7 @@ const Navbar = () => {
                           className="object-contain scale-y-150"
                         />
                       </div>
-    <nav className=" w-full bg-[#FFF9F9]  z-50 mx-5 lg:mx-7 xl:mx-auto ">
+    <nav className=" w-full bg-[#FFF9F9] my-3 z-50 mx-5 lg:mx-7 xl:mx-auto ">
       <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Hamburger Icon (Mobile) */}
@@ -56,10 +56,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`relative px-3 py-2 text-sm font-['Apex_Mk2'] transition-colors ${
+                className={`relative px-3 py-2 text-lg font-['Apex_Mk2'] transition-colors ${
                   pathname === link.path
-                    ? "text-[#DE0308]  text-lg border-b-1 border-[#DE0308]"
-                    : "text-gray-500 hover:text-black"
+                    ? "text-[#DE0308]  text-lg border-b-2 border-[#DE0308]"
+                    : "text-[#2B2B2B] hover:text-black"
                 }`}
               >
                 {link.label}

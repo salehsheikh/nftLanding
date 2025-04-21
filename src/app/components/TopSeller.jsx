@@ -67,11 +67,11 @@ const TopSeller = () => {
           <div className="px-4 container mx-auto mt-20">
    <div className="text-center mb-12 ">
         <div className="flex justify-between items-center   mt-6  flex-wrap gap-12">
-  <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex_Mk2] ">
+  <p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2] ">
             Top seller
           </p>
           <div className="flex gap-4 shrink-0">
-  <p className="text-[#FD0000] text-[22px] capitalize cursor-pointer font-roboto">View all</p>
+  <p className="text-[#FD0000] text-[22px]  font-medium capitalize cursor-pointer font-roboto">View all</p>
 </div>
 </div>
 

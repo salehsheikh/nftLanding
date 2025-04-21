@@ -4,7 +4,7 @@ import HeroCard from './HeroCard';
 import { PlayIcon } from "@heroicons/react/24/outline";
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -83,11 +83,11 @@ const FeaturedCollection = () => {
         />
       </div>
 
-      <div className="px-4 py-12 mx-auto container">
+      <div className="px-4 py-12 mx-auto container overflow-y-visible">
         {/* Title and Buttons */}
         <div className="mb-12">
           <div className="flex">
-            <p className="text-2xl md:text-4xl font-['Apex_Mk2'] lg:text-6xl text-[#2B2B2B] uppercase">
+            <p className="text-2xl md:text-4xl font-['Apex_Mk2'] lg:text-6xl text-[#000] tracking-[2.5px] uppercase">
               Featured collection
             </p>
           </div>
@@ -107,14 +107,14 @@ const FeaturedCollection = () => {
                   background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
                 }}
               >
-                <span className="block rotate-[135deg]">
+                <span className="block rotate-[135deg] cursor-pointer">
                   <PlayIcon className="text-white w-5 h-5 rotate-180" />
                 </span>
               </button>
 
               <button
                 ref={nextRef}
-                className="p-3 rounded-md -rotate-[135deg] "
+                className="p-3 rounded-md -rotate-[135deg] cursor-pointer "
                 style={{
                   background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
                 }}

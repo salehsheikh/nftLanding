@@ -9,7 +9,11 @@ const SoldCard = ({
 }) => {
   return (
     <div>
-            <div className="min-w-[308px] mx-auto rounded-2xl shadow-md overflow-hidden relative bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/card.png')" }}>
+            <div className="min-w-[308px] mx-auto rounded-2xl shadow-xl  overflow-hidden relative bg-cover bg-no-repeat bg-center" style={{
+  backgroundImage: "url('/card.png')",
+  
+  
+}}>
 
       {/* Profile Section */}
       <div className="flex justify-start gap-4 items-center p-6 pb-4">
@@ -22,7 +26,7 @@ const SoldCard = ({
                />
              </div>
              <div className="space-y-1">
-               <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg ">{name}</h3>
+               <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg  uppercase">{name}</h3>
                <p className="text-[#6B6B6B] font-roboto text-xs">{email}</p>
              </div>
            </div>
@@ -34,12 +38,12 @@ const SoldCard = ({
             src={tshirtImage}
             alt="T-Shirt Design"
             layout="fill"
-            className="object-cover opacity-[0.3]"
+            className="object-cover opacity-[0.5] "
           />
 
           {/* Overlay Buttons */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
-      <button className=" text-white w-24 h-[37px] rounded-lg  shadow-lg font-montserrat uppercase font-semibold "
+      <button className=" text-[#fff] w-24 h-[37px] rounded-lg   font-montserrat uppercase font-semibold border-[2.7px] border-[#FDFDFD26] "
       style={{
         background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
       }}
@@ -48,15 +52,15 @@ const SoldCard = ({
       </button>
     </div>
           <div className="absolute bottom-4 left-2 right-2 flex justify-between">
-            <button className=" text-white opacity-[0.3] px-4 rounded-lg text-xs   font-semibold font-roboto "
+            <button className=" text-[#fff] opacity-[0.6] px-4 rounded-lg text-xs   font-medium font-roboto "
              style={{
               background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
             }}>
               Buy 
             </button>
             
-            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm  opacity-[0.3]">
-              <span className="font-semibold text-gray-800">price:</span>
+            <div className="flex items-center gap-1 bg-[#fff]  px-3 py-3 rounded-lg   opacity-[0.6]">
+              <span className="font-semibold text-[#808080]">Price:</span>
               <div className="flex items-center gap-1.5">
                 <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">
                   <div className="relative w-4 h-4">

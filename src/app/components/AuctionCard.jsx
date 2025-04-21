@@ -16,7 +16,10 @@ const AuctionCard = ({
   return (
     <div>
       {/* Card Container */}
-      <div className="min-w-[308px] mx-auto rounded-2xl shadow-md overflow-hidden relative   group transition-all duration-200 hover:opacity-80 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/card.png')" }}>
+      <div className="min-w-[308px] mx-auto rounded-2xl shadow-xl overflow-hidden relative   group transition-all duration-200 hover:opacity-80 bg-cover bg-no-repeat bg-center" style={{
+backgroundImage: "url('/card.png')",
+  
+}}>
 
         {/* Profile Info */}
         <div className="flex justify-start gap-4 items-center p-6 pb-4">
@@ -29,8 +32,8 @@ const AuctionCard = ({
                  />
                </div>
                <div className="space-y-1">
-                 <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg ">{name}</h3>
-                 <p className="text-[#6B6B6B] font-roboto text-xs">{email}</p>
+                 <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg uppercase ">{name}</h3>
+                 <p className="text-[#6B6B6B] font-roboto text-xs font-light">{email}</p>
                </div>
              </div>
 
@@ -50,7 +53,7 @@ const AuctionCard = ({
               {/* Place a Bid Button – hidden by default, fades in & slides up */}
               <button
               onClick={()=>setIsModalOpen(true)}
-                className=" text-white px-4 py-2 rounded-lg shadow-lg 
+                className=" text-white px-4 py-2 rounded-lg shadow-lg cursor-pointer
                 opacity-0 translate-y-12 
                 group-hover:opacity-100 group-hover:translate-y-0 
                 transition-all duration-[1000ms]"

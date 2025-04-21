@@ -69,7 +69,7 @@ const Auction = () => {
       {/* Text Section */}
       <div className="text-start px-4 mb-6 mt-28 ">
      
-  <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex_Mk2] font-normal ">
+  <p className="text-2xl md:text-4xl lg:text-6xl  uppercase font-[Apex_Mk2] font-normal text-[#000] tracking-[2.5px]">
            auction
           </p>
  </div>
@@ -87,12 +87,12 @@ const Auction = () => {
             />
           ))}
         </div>
-         <div className="flex  justify-center gap-4 mt-12 shrink-0">
+         <div className="flex  justify-center  mt-12 shrink-0">
           <button className="text-white rounded-sm   cursor-pointer px-8 py-4 "
           style={{
             background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
           }}>
-            <span className="flex text-center gap-5 capitalize ">
+            <span className="flex gap-2.5 capitalize ">
               Explore more
               <ChevronDoubleRightIcon className="w-6 h-6 rotate-310" />
             </span>

@@ -71,7 +71,7 @@ const Sold = () => {
  <div className="px-4 py-8 mt-16  mx-auto container ">
      <div className="  mb-12 ">
      
-     <p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex-Mk2] ">
+     <p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px]  uppercase font-[Apex-Mk2] ">
               Recently Sold
              </p>
     </div>

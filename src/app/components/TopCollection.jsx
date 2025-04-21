@@ -6,7 +6,7 @@ const TopCollections = [
   { 
     imageSrc: "/seller8.png",
     art:"WonderFull artwork",
-    createdby:"Created by Jacob Jones",
+    createdby:" Jacob Jones",
     images: [
       "/top1.png",
       "/top2.png",
@@ -19,7 +19,7 @@ const TopCollections = [
   {
     imageSrc: "/seller4.png",
     art:"WonderFull artwork",
-    createdby:"Created by Jacob Jones",
+    createdby:" Jacob Jones",
     images: [
       "/top7.png",
       "/top8.png",
@@ -32,7 +32,7 @@ const TopCollections = [
   {
     imageSrc: "/seller3.png",
     art:"WonderFull artwork",
-    createdby:"Created by Jacob Jones",
+    createdby:"Jacob Jones",
     images: [
       "/top13.png",
       "/top14.png",
@@ -61,12 +61,12 @@ const TopCollection = () => {
     <div className="text-center mb-12 py-12">
     <div className="flex justify-between items-center   mt-6 flex-wrap ">
 {/* Center Paragraph */}
-<p className="text-2xl md:text-4xl lg:text-6xl text-[#2B2B2B] uppercase font-[Apex-Mk2]">
+<p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex-Mk2]">
         Top collections
       </p>
       <div className="flex gap-4 shrink-0">
 {/* Left Play Button */}
-<p className="text-[#FD0000] text-xl  font-roboto  cursor-pointer">View More Collections</p>
+<p className="text-[#FD0000] text-[22px]  font-roboto   cursor-pointer">View More Collection</p>
 </div>
 </div>
 

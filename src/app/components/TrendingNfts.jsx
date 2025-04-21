@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import HeroCard from './HeroCard';
  import {PlayIcon } from "@heroicons/react/24/outline";
  
@@ -63,6 +64,9 @@ const cards = [
   
   ];
 const TrendingNfts = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleToggle = () => setShowDropdown(prev => !prev);
   return (
     <div className='relative'>
       <div className="absolute top-[30px] left-0 w-[300px] h-[300px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10">   
@@ -72,17 +76,35 @@ const TrendingNfts = () => {
       <div className="text-center mb-12  ">
         <div className="flex justify-between items-center   mt-6  flex-wrap gap-12">
   {/* Center Paragraph */}
-  <p className="text-2xl md:text-4xl lg:text-6xl  text-[#2B2B2B] uppercase font-[Apex_Mk2]">
+  <p className="text-2xl md:text-4xl lg:text-6xl  text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2]">
             Trending Nft's
           </p>
           <div className="flex gap-4 shrink-0">
   {/* Left Play Button */}
-  <button className="border border-[#FD0000] cursor-pointer px-[25px] py-[14px] rounded-md text-center">
+  <button
+  onClick={handleToggle}
+  className="border border-[#FD0000] cursor-pointer px-[25px] py-[14px] rounded-md text-center">
     <span className="flex items-center gap-2 text-[#FD0000] font-roboto text-lg capitalize">
       Last 30 minutes
       <PlayIcon className="w-6 h-6 rotate-90" />
     </span>
   </button>
+  {showDropdown && (
+                <ul className="absolute right-31 mt-16 w-54 bg-[#F9F9F9] border border-[#FD0000] shadow-lg rounded-md z-10">
+                  {["Last 30 minutes", "Last 1 hour", "Last 24 hours", "Last 7 days"].map((option, i) => (
+                    <li
+                      key={i}
+                      className="px-4 py-2 text-lg font-roboto text-[#2B2B2B] hover:bg-[#F9E0E0]  cursor-pointer"
+                      onClick={() => {
+                        setShowDropdown(false);
+                        // Optionally update state for selected filter
+                      }}
+                    >
+                      {option}
+                    </li>
+                  ))}
+                </ul>
+              )}
 </div>
 </div>
 

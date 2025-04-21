@@ -8,7 +8,7 @@ const HomeText = () => {
         </p>
       </div>
       <div className="mt-6 flex justify-center">
-        <p className="text-base md:text-lg max-w-2xl text-[#808080] ">
+        <p className="text-lg font-roboto font-light md:text-lg max-w-2xl text-[#808080] ">
           Discover and trade unique digital art pieces on our NFT website, where creativity meets blockchain technology.
         </p>
       </div>
