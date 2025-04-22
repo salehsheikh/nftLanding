@@ -26,7 +26,7 @@ const TopCollectionCard = ({ images = [], imageSrc, art, createdby }) => {
         {/* Second Row: 4 Images */}
         <div className="grid grid-cols-4 gap-2 ">
           {secondRow.map((img, idx) => (
-            <div key={idx} className="aspect-3/2 relative  overflow-hidden">
+            <div key={idx} className="aspect-3/2 relative rounded-[15px] overflow-hidden">
               <Image
                 src={img}
                 alt={`Sold Image ${idx + 3}`}
