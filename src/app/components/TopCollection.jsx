@@ -5,7 +5,7 @@ import Image from 'next/image';
 const TopCollections = [
   { 
     imageSrc: "/seller8.png",
-    art:"WonderFull artwork",
+    art:"WonderFul artwork",
     createdby:" Jacob Jones",
     images: [
       "/top1.png",
@@ -18,7 +18,7 @@ const TopCollections = [
   },
   {
     imageSrc: "/seller4.png",
-    art:"WonderFull artwork",
+    art:"WonderFul artwork",
     createdby:" Jacob Jones",
     images: [
       "/top7.png",
@@ -31,7 +31,7 @@ const TopCollections = [
   },
   {
     imageSrc: "/seller3.png",
-    art:"WonderFull artwork",
+    art:"WonderFul artwork",
     createdby:"Jacob Jones",
     images: [
       "/top13.png",
@@ -61,8 +61,8 @@ const TopCollection = () => {
     <div className="text-center mb-12 py-12">
     <div className="flex justify-between items-center   mt-6 flex-wrap ">
 {/* Center Paragraph */}
-<p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex-Mk2]">
-        Top collections
+<p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2]">
+        top collections
       </p>
       <div className="flex gap-4 shrink-0">
 {/* Left Play Button */}

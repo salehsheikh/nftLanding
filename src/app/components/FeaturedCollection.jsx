@@ -10,8 +10,8 @@ import 'swiper/css/navigation';
 
 const cards = [
   {
-    name: "John Doe",
-    email: "john@example.com",
+    name: "Stella nova",
+    email: "@Stell Nova",
     profileImage: "/profile.png",
     tshirtImage: "/feat1.png",
     price: 19.99
@@ -41,28 +41,28 @@ const cards = [
     name: "John Doe",
     email: "john@example.com",
     profileImage: "/profile.png",
-    tshirtImage: "/feat1.png",
+    tshirtImage: "/feat5.png",
     price: 19.99
   },
   {
     name: "Jusmab",
     email: "jusmab@example.com",
     profileImage: "/profile.png",
-    tshirtImage: "/feat2.png",
+    tshirtImage: "/feat6.png",
     price: 29.99
   },
   {
     name: "center",
     email: "huzaifa@example.com",
     profileImage: "/profile.png",
-    tshirtImage: "/feat3.png",
+    tshirtImage: "/feat7.png",
     price: 39.99
   },
   {
     name: "Sheikh",
     email: "sheikh@example.com",
     profileImage: "/profile.png",
-    tshirtImage: "/feat4.png",
+    tshirtImage: "/feat8.png",
     price: 49.99
   },
 ];
@@ -72,7 +72,7 @@ const FeaturedCollection = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="relative mt-60">
+    <div className="relative">
       {/* Decorative SVG */}
       <div className="absolute top-96 right-0 h-full w-[400px] hidden md:block">
         <Image

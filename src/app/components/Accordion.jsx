@@ -54,14 +54,14 @@ const Accordion = () => {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className={`w-full flex items-center gap-3 px-5 py-4 text-left  ${
-                    isOpen ? 'bg-[#F9E0E0]  ' : 'bg-[#FFF9F9]'
-                  } rounded-[20px] my-4 opacity-[0.1px]  `}
+                  className={`w-full flex items-center gap-3 px-5 text-left  ${
+                    isOpen ? 'bg-[#F9E0E0]  py-2.5 ' : 'bg-[#FFF9F9]'
+                  } rounded-[20px] my-2 h-21.5 opacity-[0.1px]  `}
                 >
                   {isOpen ? (
-                    <MinusIcon className="w-7.5 h-7.5 text-black" />
+                    <MinusIcon className="w-7.5 h-7.5 text-black cursor-pointer" />
                   ) : (
-                    <PlusIcon className="w-7.5 h-7.5 text-black" />
+                    <PlusIcon className="w-7.5 h-7.5 text-black cursor-pointer" />
                   )}
                   <span className="text-[#2B2B2B] font-semibold text-[22px]  font-roboto">
                     {item.question}
@@ -69,7 +69,7 @@ const Accordion = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="bg-transparent px-14 py-4 text-[#808080] text-sm md:text-lg leading-relaxed font-roboto rounded-b-xl">
+                  <div className="bg-transparent px-14 py-2.5 text-[#808080] text-sm md:text-lg leading-relaxed font-roboto rounded-b-xl">
                     {item.answer}
                   </div>
                 )}

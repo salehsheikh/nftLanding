@@ -10,7 +10,7 @@ const BidModal = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-3xl p-6 md:p-8 max-w-[415px] w-full relative shadow-xl">
         
         {/* Close Icon */}
-        <button onClick={onClose} className="absolute top-4 right-4 text-[#2B2B2B] hover:text-red-500 transition">
+        <button onClick={onClose} className="absolute top-4 right-4 text-[#2B2B2B] hover:text-red-500 transition cursor-pointer">
           <XMarkIcon className="w-6 h-6" />
         </button>
 
@@ -100,13 +100,13 @@ const BidModal = ({ isOpen, onClose }) => {
 
        <div className='flex justify-between gap-2.5'>
        <button onClick={onClose}
-          className="mt-6 w-full py-4 px-8 text-[#2B2B2B] font-roboto text-lg rounded-lg bg-white border-2 border-[#F4F3F3] "
+          className="mt-6 w-full py-4 px-8 text-[#2B2B2B] font-roboto text-lg rounded-lg bg-white border-2 border-[#F4F3F3] cursor-pointer "
            >
           Cancel
         </button>
         <button
         onClick={onClose}
-          className="mt-6 w-full py-4 px-8 text-white font-roboto text-lg rounded-lg "
+          className="mt-6 w-full py-4 px-8 text-white font-roboto text-lg rounded-lg  cursor-pointer"
           style={{
             background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
           }} >

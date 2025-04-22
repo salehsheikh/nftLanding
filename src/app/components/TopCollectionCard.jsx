@@ -8,11 +8,11 @@ const TopCollectionCard = ({ images = [], imageSrc, art, createdby }) => {
 
   return (
     <div className="bg-white rounded-[15px] border-[2.8px]  border-[#E7E7E7] p-3 w-full sm:max-w-full">
-      <div className="bg-[#E7E7E7] p-3 rounded-[15px] space-y-3">
+      <div className="bg-[#E7E7E7] p-2.5 rounded-[15px] space-y-3">
         {/* First Row: 2 Images */}
         <div className="grid grid-cols-2 gap-3">
           {firstRow.map((img, idx) => (
-            <div key={idx} className="aspect-[3/2] relative rounded overflow-hidden">
+            <div key={idx} className="aspect-[3/2] rounded-[15px] relative overflow-hidden">
               <Image
                 src={img}
                 alt={`Sold Image ${idx + 1}`}

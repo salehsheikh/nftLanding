@@ -9,8 +9,9 @@ const HeroCard = ({
 }) => {
   return (
     <div>
-  <div className="min-w-[308px] mx-auto rounded-2xl  shadow-xs  overflow-hidden relative bg-cover bg-no-repeat bg-center  " style={{
-  backgroundImage: "url('/card.png')",
+  <div className="min-w-[308px] mx-auto rounded-2xl  shadow-xs  overflow-hidden relative bg-cover  bg-no-repeat bg-center  backdrop-blur-xl opacity-100 backdrop-opacity-10 " style={{
+  backgroundImage: "url('/card.png')"
+  ,
 }}>
       {/* Profile Section */}
       <div className="flex justify-start gap-4 items-center p-6 pb-4">
@@ -23,14 +24,14 @@ const HeroCard = ({
           />
         </div>
         <div className="space-y-1">
-          <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg uppercase ">{name}</h3>
+          <h3 className="font-[Apex_Mk2]  text-[#2B2B2B] text-lg uppercase ">{name}</h3>
           <p className="text-[#6B6B6B] font-roboto text-xs font-light">{email}</p>
         </div>
       </div>
 
       {/* T-shirt Image Section */}
-      <div className="relative aspect-square rounded px-4 pb-4">
-        <div className="relative h-full w-full rounded-lg overflow-hidden border-2 border-gray-100">
+      <div className="relative aspect-square px-4 pb-4">
+        <div className="relative h-full w-full rounded-[14px]   overflow-hidden ">
           <Image
             src={tshirtImage}
             alt="T-Shirt Design"
@@ -39,15 +40,15 @@ const HeroCard = ({
           />
 
           {/* Overlay Buttons */}
-          <div className="absolute bottom-4 left-2 right-2 flex justify-between">
-            <button className=" text-[#fff] px-6 py-3 rounded-lg text-xs font-medium cursor-pointer "
+          <div className="absolute bottom-2.5 left-2.5 right-2.5 flex justify-between">
+            <button className=" text-white w-14 h-9 flex items-center justify-center rounded-lg text-xs font-roboto font-medium cursor-pointer shrink-0"
              style={{
               background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
             }}>
               Buy 
             </button>
             
-            <div className="flex items-center gap-1 bg-white backdrop-blur-sm px-3 py-3 rounded-lg shadow-sm ">
+            <div className="flex items-center justify-center gap-1 bg-white  w-[123px] h-[36px] rounded-[9px] shadow-sm shrink-0 ">
               <span className="font-semibold text-[#2B2B2B] capitalize">price:</span>
               <div className="flex items-center gap-1.5">
                 <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">

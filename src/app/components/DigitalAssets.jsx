@@ -57,7 +57,7 @@ const DigitalAssets = () => {
       {/* Form Container */}
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-xl bg-transparent backdrop-blur-xs rounded-xl p-3 md:p-4 "
+        className="w-full max-w-xl bg-transparent  rounded-xl p-3 md:p-4 lg:-translate-y-14  "
       >
         <div className="flex bg-[#ffffff] flex-col md:flex-row items-center gap-4  shadow-lg rounded-lg p-1.5">
           <input

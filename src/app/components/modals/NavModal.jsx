@@ -17,7 +17,7 @@ const NavModal = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-3xl p-6 max-w-[415px] w-full relative">
         
         {/* Close Icon */}
-        <button onClick={onClose} className="absolute top-4 right-4 text-black">
+        <button onClick={onClose} className="absolute top-4 right-4 text-black cursor-pointer">
           <XMarkIcon className="w-6 h-6" />
         </button>
 
@@ -27,7 +27,7 @@ const NavModal = ({ isOpen, onClose }) => {
         </h2>
 
         {/* Logo Image */}
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center mb-2 cursor-pointer">
           <Image src="/modallogo.png" alt="Wallet Logo" width={106} height={80} />
         </div>
 

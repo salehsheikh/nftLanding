@@ -18,8 +18,8 @@ const EmailSignup = () => {
     <div className="max-w-4xl mx-auto px-4  mt-24 py-8">
       {/* First Row - Text */}
       <div className="mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-oxanium font-bold text-[#2B2B2B] uppercase">
-          Ready for Next Drop ?
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-oxanium font-bold text-[#2B2B2B] ">
+        Ready for Next NFT Drop?
         </h2>
       </div>
 
@@ -36,11 +36,11 @@ const EmailSignup = () => {
           />
           <button
             type="submit"
-            className="w-[88px] h-[76px]  text-white rounded-md px-4 py-4 md:py-5 md:px-[27px] cursor-pointer flex items-center justify-center"
+            className="w-[88px] h-[76px]  text-white rounded-[15px] px-4 py-4 md:py-5 md:px-[27px] cursor-pointer flex items-center justify-center"
             style={{
               background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
             }}>
-            <PaperAirplaneIcon className="w-8 h-8 rotate-310 shrink-0" />
+            <PaperAirplaneIcon className="w-8 h-8 rotate-311 shrink-0" />
           </button>
         </div>
       </form>

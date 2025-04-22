@@ -32,14 +32,14 @@ backgroundImage: "url('/card.png')",
                  />
                </div>
                <div className="space-y-1">
-                 <h3 className="font-[Apex-Mk2]  text-[#2B2B2B] text-lg uppercase ">{name}</h3>
+                 <h3 className="font-[Apex_Mk2]  text-[#2B2B2B] text-lg uppercase ">{name}</h3>
                  <p className="text-[#6B6B6B] font-roboto text-xs font-light">{email}</p>
                </div>
              </div>
 
         {/* T-shirt Area */}
-        <div className="relative aspect-square rounded px-4 pb-4">
-          <div className="relative h-full w-full rounded-lg overflow-hidden border-2 border-gray-100">
+        <div className="relative aspect-square  px-4 pb-4">
+          <div className="relative h-full w-full rounded-[14px] overflow-hidden ">
             <Image
               src={tshirtImage}
               alt="T-Shirt Design"

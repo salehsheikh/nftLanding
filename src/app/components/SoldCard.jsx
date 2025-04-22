@@ -32,8 +32,8 @@ const SoldCard = ({
            </div>
 
       {/* T-shirt Image Section */}
-      <div className="relative aspect-square rounded px-4 pb-4">
-        <div className="relative h-full w-full rounded-lg overflow-hidden border-2 border-gray-100">
+      <div className="relative aspect-square  px-4 pb-4">
+        <div className="relative h-full w-full rounded-[14px] overflow-hidden ">
           <Image
             src={tshirtImage}
             alt="T-Shirt Design"
@@ -51,31 +51,31 @@ const SoldCard = ({
         Sold
       </button>
     </div>
-          <div className="absolute bottom-4 left-2 right-2 flex justify-between">
-            <button className=" text-[#fff] opacity-[0.6] px-4 rounded-lg text-xs   font-medium font-roboto "
-             style={{
-              background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
-            }}>
-              Buy 
-            </button>
-            
-            <div className="flex items-center gap-1 bg-[#fff]  px-3 py-3 rounded-lg   opacity-[0.6]">
-              <span className="font-semibold text-[#808080]">Price:</span>
-              <div className="flex items-center gap-1.5">
-                <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">
-                  <div className="relative w-4 h-4">
-                    <Image
-                      src="/cardicon.png"
-                      alt="Cart"
-                      layout="fill"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-                <span className="text-xs  text-[#808080]">{price}</span>
-              </div>
-            </div>
-          </div>
+         <div className="absolute bottom-2.5 left-2.5 right-2.5 flex justify-between">
+                     <button className=" text-white opacity-60 w-14 h-9 flex items-center justify-center rounded-lg text-xs font-roboto font-medium cursor-pointer shrink-0"
+                      style={{
+                       background: "linear-gradient(318deg, #FD0000 26.88%, #FF9292 105.85%)",
+                     }}>
+                       Buy 
+                     </button>
+                     
+                     <div className="flex items-center opacity-60 justify-center gap-1 bg-white  w-[123px] h-[36px] rounded-[9px] shadow-sm shrink-0 ">
+                       <span className="font-semibold text-[#2B2B2B] capitalize">price:</span>
+                       <div className="flex items-center gap-1.5">
+                         <div className="bg-black rounded-full p-1.5 w-6 h-6 flex items-center justify-center">
+                           <div className="relative w-4 h-4">
+                             <Image
+                               src="/cardicon.png"
+                               alt="Cart"
+                               layout="fill"
+                               className="object-contain"
+                             />
+                           </div>
+                         </div>
+                         <span className="text-xs text-[#808080]">{price}</span>
+                       </div>
+                     </div>
+                   </div>
         </div>
       </div>
     </div>
