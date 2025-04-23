@@ -9,7 +9,7 @@ const HeroCard = ({
 }) => {
   return (
     <div>
-  <div className="min-w-[308px] mx-auto rounded-2xl  drop-shadow-lg  overflow-hidden relative bg-cover  bg-no-repeat bg-center  backdrop-blur-xl opacity-100 backdrop-opacity-10 " style={{
+  <div className="min-w-[308px] mx-auto rounded-2xl  drop-shadow-lg  overflow-hidden relative bg-cover  bg-no-repeat bg-center  backdrop-blur-xl  " style={{
   backgroundImage: "url('/card.png')"
   ,
 }}>

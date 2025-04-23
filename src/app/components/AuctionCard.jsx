@@ -16,7 +16,7 @@ const AuctionCard = ({
   return (
     <div>
       {/* Card Container */}
-      <div className="min-w-[308px] mx-auto rounded-2xl shadow-xl overflow-hidden relative   group transition-all duration-200 hover:opacity-80 bg-cover bg-no-repeat bg-center" style={{
+      <div className="min-w-[308px] mx-auto rounded-2xl drop-shadow-lg overflow-hidden relative   group transition-all duration-200 hover:opacity-80 bg-cover bg-no-repeat bg-center backdrop-blur-xl" style={{
 backgroundImage: "url('/card.png')",
   
 }}>
