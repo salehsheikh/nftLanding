@@ -83,7 +83,7 @@ const FeaturedCollection = () => {
         />
       </div>
 
-      <div className="px-4 py-12 mx-auto container overflow-y-visible">
+      <div className="px-4  py-12 mx-auto ">
         {/* Title and Buttons */}
         <div className="mb-12">
           <div className="flex">
@@ -128,7 +128,7 @@ const FeaturedCollection = () => {
         </div>
 
         {/* Swiper */}
-        <Swiper
+        <Swiper className=' !py-2'
           modules={[Navigation, ]}
           spaceBetween={24}
           slidesPerView={1}
