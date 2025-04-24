@@ -32,12 +32,12 @@ const BootsNfts = () => {
           </div>
 
           {/* Image Section */}
-          <div className="md:flex-1 w-auto relative aspect-square min-h-[620px]  2xl:min-h-[800px] ">
+          <div className="md:flex-1 w-full sm:w-auto relative aspect-square min-h-[500px] sm:min-h-[620px]  2xl:min-h-[800px] ">
             <Image
               src="/boost.svg"
               alt="NFT boost visualization graphic"
               fill
-              className="object-contain scale-90 sm:scale-100 xl:-translate-y-12"
+              className="object-contain xl:-translate-y-12"
               priority
             />
           </div>

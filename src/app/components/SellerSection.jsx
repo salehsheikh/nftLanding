@@ -6,7 +6,7 @@ const SellerSection = ({ imageSrc, name, paragraph }) => {
   return (
     <div className="flex items-center gap-4 relative">
       {/* Image Wrapper */}
-      <div className="relative w-29 h-29 shrink-0">
+      <div className="relative sm:w-29 sm:h-29  w-20 h-20 shrink-0">
         <Image
           src={imageSrc}
           alt={name}
@@ -14,7 +14,7 @@ const SellerSection = ({ imageSrc, name, paragraph }) => {
           className="rounded-md object-cover"
         />
         {/* Tick Icon */}
-        <div className="absolute top-0 right-0  rounded-full p-1 w-6 h-6 bg-[#7872FF] shadow-md">
+        <div className="absolute sm:top-0 sm:right-0 -top-2 -right-1 rounded-full p-1 w-6 h-6 bg-[#7872FF] shadow-md">
           <CheckIcon className="text-white " />
         </div>
       </div>

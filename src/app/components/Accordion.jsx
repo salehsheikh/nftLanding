@@ -38,7 +38,7 @@ const Accordion = () => {
     <div className="relative">
       <div className="absolute top-0 right-0 w-[310px] h-[310px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10" />
 
-      <div className="max-w-[1037px] mx-auto px-4 my-16">
+      <div className="max-w-[1037px] mx-auto px-4 my-8 md:my-16">
         <h2 className="text-3xl xl:text-6xl text-[#2B2B2B] font-bold text-center mb-8 uppercase font-['Apex_Mk2'] tracking-wide">
           Frequently Asked Questions
         </h2>
