@@ -7,7 +7,7 @@ const AnimatedCards = () => {
       name: "John Doe",
       email: "john@example.com",
       profileImage: "/profile.png",
-      tshirtImage: "/card2.png",
+      tshirtImage: "/trend5.png",
       price: 19.99,
     },
     {
@@ -21,14 +21,14 @@ const AnimatedCards = () => {
       name: "center",
       email: "huzaifa@example.com",
       profileImage: "/profile.png",
-      tshirtImage: "/card1.png",
+      tshirtImage: "/sold4.png",
       price: 39.99,
     },
     {
       name: "Sheikh",
       email: "sheikh@example.com",
       profileImage: "/profile.png",
-      tshirtImage: "/card1.png",
+      tshirtImage: "/trend4.png",
       price: 49.99,
     },
     {
@@ -42,18 +42,20 @@ const AnimatedCards = () => {
 
 
   const cardTransforms = [
-    "!rotate-x-45  -translate-x-90   animate-xShift ",
-    "!rotate-x-30 -translate-x-48   animate-xShift",
-    "!rotate-[0deg] z-30 animate-yBounce",
-    "!rotate-x-30  translate-x-48 animate-xShift ",
-    "!rotate-x-45 translate-x-90  animate-xShift",
+    "!rotate-x-45 z-10 -translate-x-90   animate-xShift ",
+    "!rotate-x-30 z-20 -translate-x-48   animate-xShift",
+    "!rotate-[0deg] z-30 ",
+    "!rotate-x-30  z-20 translate-x-48 animate-xShift ",
+    "!rotate-x-45 z-10 translate-x-90  animate-xShift",
     
   ];
 
   return (
-    <div className="bg-[#FFF9F9] radial-bg py-10 relative">
+    <div className="  relative">
+            <div className="hidden lg:block absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[310px] h-[310px] bg-[#FD0000] rounded-full blur-[250px] z-10 "></div>
+
       {/* For medium and up screens - layered layout */}
-      <div className="hidden lg:flex min-h-[500px] items-center justify-center relative">
+      <div className="hidden lg:flex min-h-[500px] items-center  mx-auto justify-center relative z-10">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -66,7 +68,7 @@ const AnimatedCards = () => {
       </div>
 
       {/* For small screens - scrollable horizontal stack */}
-      <div className="flex lg:hidden gap-4 overflow-x-auto px-4 snap-x">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mb-24 md:mb-0 lg:hidden !gap-4 overflow-x-auto p-4 my-6 snap-x">
         {cards.map((card, index) => (
           <div key={index} className="min-w-[280px] snap-center">
             <HeroCard {...card} />
@@ -75,14 +77,14 @@ const AnimatedCards = () => {
       </div>
 
       {/* Decorative Frame */}
-      <div className="relative w-full mt-12 lg:-translate-y-56 z-0">
+      <div className="relative w-full  z-0  hidden md:block ">
         <Image
-          src="/Frame 2147223672.svg"
+          src="/hands.png"
           alt="Background Frame"
           layout="responsive"
           width={1200}
           height={300}
-          className="object-contain"
+          className="object-contain  xl:-mt-50 lg:-mt-36 mx-auto"
         />
       </div>
     </div>
