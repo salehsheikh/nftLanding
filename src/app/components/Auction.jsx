@@ -67,7 +67,7 @@ const Auction = () => {
        <div className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[310px] h-[310px] bg-[#FD0000] rounded-full blur-[250px] -z-10"></div>
  <div className= "px-4 py-24 mx-auto container mt-12 ">
       {/* Text Section */}
-      <div className="text-start px-4 mb-6 mt-28 ">
+      <div className="text-start px-4 mb-6 md:mt-28 ">
      
   <p className="text-2xl md:text-4xl lg:text-6xl  uppercase font-[Apex_Mk2] font-normal text-[#000] tracking-[2.5px]">
            auction

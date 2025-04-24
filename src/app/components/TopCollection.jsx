@@ -59,7 +59,7 @@ const TopCollection = () => {
               </div>
               <div className='container mx-auto px-4'>
     <div className="text-center mb-12 py-12">
-    <div className="flex justify-between items-center   mt-6 flex-wrap ">
+    <div className="flex justify-between items-center   md:mt-6 flex-wrap ">
 {/* Center Paragraph */}
 <p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2]">
         top collections

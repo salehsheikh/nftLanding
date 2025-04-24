@@ -85,7 +85,7 @@ const FeaturedCollection = () => {
 
       <div className="px-4  py-12 mx-auto ">
         {/* Title and Buttons */}
-        <div className="mb-12">
+        <div className="md:mb-12 -mt-36 md:mt-0">
           <div className="flex">
             <p className="text-2xl md:text-4xl font-['Apex_Mk2'] lg:text-6xl text-[#000] tracking-[2.5px] uppercase">
               Featured collection
@@ -95,7 +95,7 @@ const FeaturedCollection = () => {
           <div className="flex justify-between items-start mt-6 flex-wrap gap-12">
             <p className="text-base md:text-lg font-roboto text-[#808080]">
               Explore our exclusive featured collection, showcasing innovative campaigns and creative
-              <br />
+              <br className='hidden md:block'/>
               storytelling from top brands around the world.
             </p>
 

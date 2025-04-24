@@ -13,7 +13,7 @@ const BootsNfts = () => {
       <section className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text Section (takes more space) */}
-          <div className="md:flex-[1.9] space-y-[15px] mt-12">
+          <div className="md:flex-[1.9] space-y-[15px] mt-3 md:mt-12">
             <h3 className="text-3xl md:text-5xl xl:text-6xl uppercase font-['Apex_Mk2'] text-[#2B2B2B] tracking-[1.92px]">
               Boost Your NFTs: Enhance Visibility And Value
             </h3>
@@ -37,7 +37,7 @@ const BootsNfts = () => {
               src="/boost.svg"
               alt="NFT boost visualization graphic"
               fill
-              className="object-contain xl:-translate-y-12"
+              className="object-contain scale-90 sm:scale-100 xl:-translate-y-12"
               priority
             />
           </div>

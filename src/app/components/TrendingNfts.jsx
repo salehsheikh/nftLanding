@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import HeroCard from './HeroCard';
  import {PlayIcon } from "@heroicons/react/24/outline";
  
@@ -65,21 +65,33 @@ const cards = [
   ];
 const TrendingNfts = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-
+  const dropdownRef = useRef(null);
   const handleToggle = () => setShowDropdown(prev => !prev);
+  useEffect(()=>
+  {
+    const handleClickOutside=(event)=>{
+      if( dropdownRef.current && !dropdownRef.current.contains(event.target)){
+        setShowDropdown(false)
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+ 
   return (
     <div className='relative'>
       <div className="absolute top-[30px] left-0 w-[300px] h-[300px] rounded-full bg-[#FD0000] blur-[250px] hidden md:block -z-10">   
       </div>
- <div className= "px-4 py-16 mx-auto container mt-12 " >
+ <div className= "px-4 py-16 mx-auto container md:mt-12 mt-0 " >
       {/* Text Section */}
       <div className="text-center mb-12  ">
-        <div className="flex justify-between items-center   mt-6  flex-wrap gap-12">
+        <div className="flex justify-between items-center   mt-6   gap-12">
   {/* Center Paragraph */}
   <p className="text-2xl md:text-4xl lg:text-6xl  text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2]">
             Trending Nft's
           </p>
-          <div className="flex gap-4 shrink-0">
+          <div className="flex gap-4 shrink-0"  ref={dropdownRef}>
   {/* Left Play Button */}
   <button
   onClick={handleToggle}
@@ -94,10 +106,10 @@ const TrendingNfts = () => {
                   {["Last 30 minutes", "Last 1 hour", "Last 24 hours", "Last 7 days"].map((option, i) => (
                     <li
                       key={i}
-                      className="px-4 py-2 text-lg font-roboto text-[#2B2B2B] hover:bg-[#F9E0E0]  cursor-pointer"
+                      className="px-4 py-2 text-lg font-roboto text-[#2B2B2B] hover:bg-[#F9E0E0] text-start cursor-pointer"
                       onClick={() => {
                         setShowDropdown(false);
-                        // Optionally update state for selected filter
+                      
                       }}
                     >
                       {option}

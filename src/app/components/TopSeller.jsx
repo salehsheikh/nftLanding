@@ -64,7 +64,7 @@ const TopSeller = () => {
               className="object-contain scale-y-180 "
             />
           </div>
-          <div className="px-4 container mx-auto mt-20">
+          <div className="px-4 container mx-auto md:mt-20">
    <div className="text-center mb-12 ">
         <div className="flex justify-between items-center   mt-6  flex-wrap gap-12">
   <p className="text-2xl md:text-4xl lg:text-6xl text-[#000] tracking-[2.5px] uppercase font-[Apex_Mk2] ">

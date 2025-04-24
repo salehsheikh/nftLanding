@@ -25,7 +25,7 @@ const EmailSignup = () => {
 
       {/* Second Row - Email Input */}
       <form onSubmit={handleSubmit} className="max-w-2xl mx-auto ">
-        <div className="flex flex-col md:flex-row items-center gap-4 border border-[#FD0000] rounded-[15px] py-2.5 px-4">
+        <div className="flex flex-row items-center gap-4 border border-[#FD0000] rounded-[15px] py-2.5 px-4">
           <input
             type="email"
             value={email}

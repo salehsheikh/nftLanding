@@ -34,15 +34,15 @@ const DigitalAssets = () => {
                       />
                     </div>
     <div className='px-4 mx-auto mt-16 container'>
-          <div className="text-center mb-12  uppercase">
+          <div className="text-center md:mb-12  uppercase">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Apex_Mk2'] text-gray-900 leading-tight tracking-tight">
           Turn your Imagination
-          <br className="hidden md:block" />
+          <br className="md:block" />
           Into Digital Asset
         </h1>
       </div>
 
-    <div className="relative min-h-screen mt-24 flex items-center justify-center px-4">
+    <div className="relative h-[40vh] md:min-h-screen mt-24 flex items-center justify-center px-4">
       {/* SVG Background */}
     
       <div className="absolute inset-0 -z-10 w-full h-full">
@@ -50,7 +50,7 @@ const DigitalAssets = () => {
           src="/assetscards.svg" 
           alt="Background SVG"
           layout="fill"
-          className="pointer-events-none select-none contain"
+          className="pointer-events-none select-none contain shrink-0"
         />
       </div>
 

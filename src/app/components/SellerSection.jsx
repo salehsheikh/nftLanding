@@ -6,7 +6,7 @@ const SellerSection = ({ imageSrc, name, paragraph }) => {
   return (
     <div className="flex items-center gap-4 relative">
       {/* Image Wrapper */}
-      <div className="relative w-29 h-29">
+      <div className="relative w-29 h-29 shrink-0">
         <Image
           src={imageSrc}
           alt={name}
